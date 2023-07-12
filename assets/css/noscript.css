@@ -7,7 +7,8 @@
 /* Page */
 
 	body {
-		overflow-x: scroll;
+	overflow-x: scroll;
+	padding-top: 0px;
 	}
 
 /* Wrapper */

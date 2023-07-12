@@ -1,8 +1,24 @@
-/*
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+$('.showBtn').click(function() {
+  //$('.hideme').hide();  
+  if ($(this).hasClass('active')) {    
+    $(this).removeClass('active');
+    $('.hideme').slideUp();
+  } else {
+    $('.hideme').slideUp();
+    $('.showBtn').removeClass('active');
+    $(this).addClass('active');
+    $(this).next().filter('.hideme').slideDown();
+  }
+});
+
+//function myFunction() {
+//	var x = document.getElementsByClassName("mylinks");
+//	if (x.style.display === "block") {
+//		x.style.display = "none";
+//	} else{
+//		x.style.display = "block";
+//	}
+//}
 
 (function($) {
 
@@ -335,7 +351,7 @@
 			})();
 
 	// Scroll zones.
-		if (settings.scrollZones.enabled)
+		if (settings.scrollZones.disabled)
 			(function() {
 
 				var	$left = $('<div class="scrollZone left"></div>'),
