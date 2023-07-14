@@ -533,6 +533,11 @@ input, select, textarea {
     			font-size: 3rem;
 				text-align: start;
 		}
+		
+		p {
+			text-align: justify;
+			padding-right: -30px;
+		}
 
 		h1 {
 			font-size: 2.25rem;
@@ -1914,32 +1919,38 @@ input, select, textarea {
 	height: 100%;
 }
 
-/* Child Text Container */
-.annotation div{
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-	text-align: right;
-    background: black;
-    color: white;
-    margin-bottom: 5px;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
-}
+	/* Child Text Container */
+	.annotation div{
+		position: absolute;
+		bottom: 50%;
+		right: 50%;
+		text-align: right;
+		background: black;
+		color: chartreuse;
+		margin-bottom: 5px;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: visibility 0s, opacity 0.5s linear; 
+		transition: visibility 0s, opacity 0.5s linear;
+	}
 
-/* Hover on Parent Container */
-.annotation:hover{
-    cursor: pointer;
-}
+	/* Hover on Parent Container */
+	.annotation:hover{
+		cursor: pointer;
+	}
 
-.annotation:hover div{
-    width: 600px;
-    padding: 8px 8px;
-    visibility: visible;
-    opacity: 1; 
-}
+	.annotation:hover div{
+		width: 600px;
+		padding: 8px 8px;
+		visibility: visible;
+		opacity: 1; 
+	}
+
+@media (max-width: 736px) {
+				.annotation {
+			  	display: none;
+				}
+		 	 }
 
 	.gallery {
 		-moz-align-items: -moz-stretch;
@@ -1965,12 +1976,12 @@ input, select, textarea {
 
 			.gallery .annotation div {
 				position: relative;
-				top: 90%;
+				top: 45%;
 				left: 25%;
 				margin-bottom: 5px;
 				text-align: center;
-				background: white;
-				color: black;
+				background: black;
+				color: chartreuse;
 				opacity: 0;
 				visibility: hidden;
 				-webkit-transition: visibility 0s, opacity 0.5s linear; 
@@ -3749,7 +3760,7 @@ input, select, textarea {
 
 		.panel.banner .content {
     padding-top: 3.5rem;
-    padding-right: 7rem;
+    padding-right: 3.5rem;
     padding-left: 3.5rem;
     padding-bottom: 2rem;
     display: -moz-flex;
