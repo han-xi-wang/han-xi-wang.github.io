@@ -3868,3 +3868,13 @@ input, select, textarea {
 			}
 
 	}
+
+/* Force line breaks to render correctly on mobile */
+@media screen and (max-width: 736px) {
+    .panel.banner .content h6,
+    .panel.banner .content p,
+    .panel.banner .content p2 {
+        white-space: normal !important;
+        word-break: break-word;
+    }
+}
