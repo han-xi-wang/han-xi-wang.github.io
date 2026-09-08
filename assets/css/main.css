@@ -762,7 +762,7 @@ input, select, textarea {
 			height: 300px;
 			width: auto;
 			bottom: 0px;
-			right: 0px;
+			right: 20vh;
 			opacity: 95%;
 			transition: .3s ease-in-out;
 		}
