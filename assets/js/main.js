@@ -11,14 +11,6 @@ $('.showBtn').click(function() {
   }
 });
 
-//function myFunction() {
-//	var x = document.getElementsByClassName("mylinks");
-//	if (x.style.display === "block") {
-//		x.style.display = "none";
-//	} else{
-//		x.style.display = "block";
-//	}
-//}
 
 (function($) {
 
@@ -87,6 +79,10 @@ $('.showBtn').click(function() {
 			$html = $('html'),
 			$bodyHtml = $('body,html'),
 			$wrapper = $('#wrapper');
+	
+		function isNearHome() {
+			return $document.scrollLeft() < 50;
+		}
 
 	// Breakpoints.
 		breakpoints({
@@ -99,6 +95,14 @@ $('.showBtn').click(function() {
 			short:    '(min-aspect-ratio: 16/7)',
 			xshort:   '(min-aspect-ratio: 16/6)'
 		});
+//		var breakpoints = {
+//			active: function(query) {
+//				if (query === '<=small') {
+//					return $(window).width() <= 736;
+//				}
+//				return false;
+//			}
+//		};
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
@@ -329,6 +333,14 @@ $('.showBtn').click(function() {
 						// Disable on <=small.
 							if (breakpoints.active('<=small'))
 								return;
+							// If near home and over a scrollable panel, allow native vertical scroll
+							if (isNearHome()) {
+								var $target = $(event.target);
+								var $scrollable = $target.closest('.panel');
+								if ($scrollable.length && $scrollable[0].scrollHeight > $scrollable[0].clientHeight) {
+									return; // do not preventDefault, let the browser scroll vertically
+								}
+							}
 
 						// Prevent default.
 							event.preventDefault();
@@ -469,6 +481,8 @@ $('.showBtn').click(function() {
 							// Disable on <=small.
 								if (breakpoints.active('<=small'))
 									return;
+							// Disable on Home
+								if (isNearHome()) return;	
 
 							// Clear momentum interval.
 								clearInterval(momentumIntervalId);
@@ -599,7 +613,7 @@ $('.showBtn').click(function() {
 			})();
 
 	// Link scroll.
-		$wrapper
+		$(document)
 			.on('mousedown mouseup', 'a[href^="#"]', function(event) {
 
 				// Stop propagation.
@@ -771,5 +785,59 @@ $('.showBtn').click(function() {
 						}, 275);
 
 					});
+		// Dot navigation – fade in after home
+	var dotNavOrder = [
+		'home_b',
+		'antipode',
+		'lr',
+		'urbs',
+		'ncities',
+		'wild',
+		'criticall',
+		'silence',
+		'wetland',
+		'fluid',
+		'subversive',
+		'making',
+		'contact'
+	];
+
+	function getCurrentDotIndex() {
+		if (breakpoints.active('<=small')) return 0;
+
+		var viewportCenter = $document.scrollLeft() + $window.width() / 2;
+		var minDistance = Infinity;
+		var currentIndex = 0;
+
+		$.each(dotNavOrder, function(i, id) {
+			var $panel = $('#' + id);
+			if ($panel.length === 0) return true; // skip missing
+
+			var panelLeft = $panel.offset().left;
+			var panelCenter = panelLeft + $panel.width() / 2;
+			var distance = Math.abs(panelCenter - viewportCenter);
+
+			if (distance < minDistance) {
+				minDistance = distance;
+				currentIndex = i;
+			}
+		});
+
+		return currentIndex;
+	}
+
+	function toggleDotNavVisibility() {
+		if (breakpoints.active('<=small')) return; // hidden on mobile anyway
+
+		var idx = getCurrentDotIndex();
+		if (idx > 0) {
+			$('#dot-nav').addClass('visible');
+		} else {
+			$('#dot-nav').removeClass('visible');
+		}
+	}
+
+	$(window).on('scroll resize', toggleDotNavVisibility);
+	toggleDotNavVisibility(); // initial call
 
 })(jQuery);

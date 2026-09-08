@@ -10,16 +10,18 @@
 		<style>
 		  /* Hide element on extra small devices */
 		  	@media (max-width: 736px) {
-				.element_mobile {
-			  	display: none;
-				}
+				.element_mobile {display: none;}
 		 	 }
 			
-			@media (min-width: 736px) {
-				.element_browser {
-				  display: none;
-				}
+			@media (min-width: 737px) {
+				.element_browser {display: none;}
 			  }
+			/* Show fixed bottom nav only on horizontal/browser layout (>736px) */
+			@media screen and (max-width: 736px) {
+				#fixed-nav {
+					display: none;
+				}
+			}
     </style>
 	</head>
 	<body class="is-preload">
@@ -33,120 +35,154 @@
 
 						<!-- Panel (Banner) -->
 							<section class="element_browser panel banner right large" id="home_b">
-								<div class="content color0 span-8">
+								<div class="content color0 span-10">
 									<v>王涵晰  hanxi.wang</v>
-									<h3 style="padding-top: 25px"> <a style="font-weight: 700; font-size: 1.25rem; color: chartreuse" href="#rural">RESEARCH</a> &emsp; <a style="font-weight: 700; font-size: 1.25rem; color: chartreuse" href="#silence">DESIGN</a> &emsp;<a style="font-weight: 700; font-size: 1.25rem; color: chartreuse" href="#subversive">TEACHING</a> &emsp; <a style="font-weight: 700; font-size: 1.25rem; color: chartreuse" href="#contact">CONTACT</a></h3>
-									<h3 style="padding-top: 10px">Born and raised in Tianjin, China, with international practice, research and teaching experience in North America, Europe, and Asia, Hanxi Wang is an architect, urban geographer, and designer funded by the UK Economic and Social Research Council.</h3>
-									<h3>A licensed architect in the state of New York and a LEED accredited professional in sustainable design, Hanxi earned her B.Arch. at Cornell University and a M.Sc. in Nature, Society and Environmental Governance at the University of Oxford.</h3>
+									<h3 style="padding-top: 25px"> <a style="font-weight: 700; font-size: 1.25rem; color: chartreuse" href="#rural">RESEARCH</a> &emsp; <a style="font-weight: 700; font-size: 1.25rem; color: chartreuse" href="#silence">DESIGN</a> &emsp;<a style="font-weight: 700; font-size: 1.25rem; color: chartreuse" href="#subversive">TEACHING</a></h3>
+									<h3 style="padding-top: 10px">Born and raised in Tianjin, China, with  practice, research and teaching experiences across North America, Europe, and Asia, I am an architect, urban geographer, and designer whose work has been funded by institutions such as the UK Research and Innovation Economic and Social Research Council (UKRI ESRC) and the European Space Agency (ESA).</h3>
+									<h3>I am a licensed architect in the state of New York and a LEED accredited professional in sustainable design. I earned my B.Arch. at Cornell University,  M.Sc. in Nature, Society and Environmental Governance at the University of Oxford, and am currently completing my PhD in Human Geography at University College London.</h3>
 								</div>
 							</section>
 							<section class="element_mobile panel banner right large" id="home">
-								<div class="content color0 span-2-5">
+								<div class="content color0 span-2">
 									<ul class="actions">
-										<li><a href="#rural" class="button large color0 circle icon solid fa-angle-right">Next</a></li>
+										<li><a href="#antipode" class="button large circle icon color0 solid fa-angle-right">Next</a></li>
 									</ul>
 								</div>
 								<div class="content color0 span-8">
 									<div class="showBtn">
-										<summary><h1 class="major">> 王涵晰 | hanxi.wang</h2></summary>
+										<summary><h1 class="major">> 王涵晰 | hanxi.wang</h1></summary>
 										<img src="images/hover thumbs/profile pic.png" alt="" />
 									</div>
 									<div class="hideme">
-										<h6>Born and raised in Tianjin, China, with international practice, research and teaching experience in North America, Europe, and Asia, Hanxi Wang is an <b class="major" >architect</b>, <b class="major">urban geographer</b>, and <b class="major">designer</b> funded by the <b class="major">UK Economic and Social Research Council</b>.</h6>
-										<h6>A <b class="major">licensed architect</b> in the state of New York and a LEED accredited <b class="major">professional in sustainable design</b>, Hanxi earned her <b class="major">B.Arch. at Cornell University</b> and a <b class="major">M.Sc. in Nature, Society and Environmental Governance at the University of Oxford</b>.</h6>
+										<h6>Born and raised in Tianjin, China, with  practice, research and teaching experiences across North America, Europe, and Asia, I am an <b class="major" >architect</b>, <b class="major">urban geographer</b>, and <b class="major">designer</b> whose work has been funded by institutions such as <b class="major">the UK Research and Innovation Economic and Social Research Council (UKRI ESRC)</b> and <b class="major">the European Space Agency (ESA)</b>.</h6>
+										<h6>I am a <b class="major">licensed architect</b> in the state of New York and a LEED accredited <b class="major">professional in sustainable design</b>. I earned my <b class="major">B.Arch. at Cornell University</b>, <b class="major">M.Sc. in Nature, Society and Environmental Governance at the University of Oxford</b>, and am currently completing my <b class="major">PhD in Human Geography at University College London</b>.</h6>
 										<a href="https://www.linkedin.com/in/hanxi-wang-868908137/">LinkedIn</a> &emsp; <a href="mailto: hanxi.wang.22@ucl.ac.uk">hanxi.wang.22@ucl.ac.uk</a>
 									</div>
 									<div class="showBtn">
-										<summary><h1 class="major">&gt; 研究 | research</h1>
+										<summary><h1 class="major">&gt; RESEARCH | 研究 </h1>
 										</summary>
 										<img src="images/hover thumbs/Atlas.png" alt="" / data-position="top">
 									</div>
 									<div class="hideme">
-										<h6>Through an transdisciplinary approach, Hanxi's work questions dominant narratives of power and agency within the urban environment. In particular, she is interested in informal practices of urban ecology and the complex, sometimes paradoxical ways in which their practitioners negotiate, adopt, or subvert top-down structures of governance to create alternative urban futures. Currently understaking research on her ESRC-funded PhD project <b class="major">Ruralising Urban Wastelands – Homesteads and Subversive Metabolisms in China’s Growing Cities</b> at the University College London, Department of Geography, Hanxi's work have been exhibited and presented internationally, including <a href="https://aap.cornell.edu/news-events/hanxi-wang-and-jordan-young-mash">Cornell University Department of Architecture, Art, and Planning</a>, <a href="https://www.rgs.org/research/annual-international-conference/future-conferences/">the 2022 Royal Geographical Society Annual International Conference</a> and the <a href="https://2023.ieeeigarss.org/index.php">2023 International Geoscience and Remote Sensing Symposium</a>.</h6>
-										<a href="#rural">1__Ruralising Urbanisation</a> &emsp; <a href="#wild">2__City Gone Wild</a>
+										<h6> From my <b class="major">UKRI ESRC-funded doctoral research in Human Geography</b> at University College London to <b class="major">postgraduate research in the MSc of Nature, Society and Environmental Governance</b> at the University of Oxford, I have been interested in how spatial practices mediate the relationships between humans and environments. Against dominant narratives of spatial power and agency, which has primarily focused on archetypal modes of top-down governance and bottom-up resistance, my research has investigated the more ambiguous and elusive "middle grounds" inbetween binaries (e.g. <b class="major">urban vs rural</b>, <b class="major">formal vs informal</b>) that are created by the <b class="major">everyday negotiations, adaptations, and opportunistic interventions</b> of ordinary people. Developing custom <b class="major">transdisciplinary methodologies</b>, I examine the cumulative effects of apparently small practices at the macro-scale of cities and the multi-layered temporalities that inform the emergence of such practices. Currently, my primary subject of research is <b class="major">开荒 [kāi-huāng]</b>, a practice of wasteland vegetable cultivation that takes place without organization or support upon the empty gaplands and vacant lots of Chinese megacities. Through analysis of remote sensing, social media, and ethnographic data, the project examines the rural-urban spatialities kaihuang fosters across the urban landscape and the alternative futures that may be possible if their agency is embraced by urban planning. This research has been exhibited and presented internationally, as well as published in high-impact journals such as <b class="major">Nature Cities</b>, <b class="major">Antipode</b>, and <b class="major">Landscape Research</b>.</h6> 
+										<h6>As an inaugural <b class="major">Design Teaching Fellow in Architecture</b> at Cornell University, my research on <a href="#wild">urban ruralization</a> was exhibited at the Bibliowicz Family Gallery and coordinated the annual Preston Thomas Memorial Symposium and Exhibition <a href="https://aap.cornell.edu/news/stories/innovation-at-the-fringe-the-transformative-design-and-architecture-of-the-rural-urban/">FRINGE: New Centers for Architecture and Urbanism</a> on the theme of <b class="major">rural-urban innovation</b> with Assistant Professor Leslie Lok </h6>
+										<h6><b class="major">PUBLICATIONS</b> <br> <a href="#antipode">Ruralising Urbanisation</a> &emsp; <a href="#lr">Agro-Urban Duality in Temporal Landscapes of Rapid Urbanization</a> &emsp; <a href="#ncities">The Role of Informal Ruralization</a> &emsp; <a href="#criticall">HOME-steading</a> </h6>
+										<h6><b class="major">EXHIBITIONS</b> <br> <a href="#urbs">Urbs Vegetabilis</a> &emsp; <a href="#wild">Cities Gone Wild</a></h6>
 									</div>
 
 									<div class="showBtn">
-										<summary><h1 class="major">> 设计 | design</h1></summary>
+										<summary><h1 class="major">> DESIGN | 设计 </h1></summary>
 										<img src="images/hover thumbs/design.png" alt="" />
 									</div>
 										<div class="hideme">
-											<h6>Hanxi is an architect and designer with over 3 years of international practice experience at <b class="major">leading international design firms in the US, UK, and Japan</b>. Her expertise in sustainable design is rooted in an interest in the <b class="major">entangled relationship between the built and the natural environment</b>, and in particular, a passion to understand <b class="major">the potential of the individual</b> within this entanglement in the form of <b class="major">everyday and grassroots agency</b>. Her work has been included in the <a href="https://www.archdaily.com/771146/the-best-student-work-worldwide-archdaily-readers-show-us-their-studio-projects?ad_medium=gallery">Archdaily Best Student Work Worldwide</a>, <a href="https://www.re-thinkingthefuture.com/temporary-structure/fluid-pavilion-hanxi-charisse/">Rethinking the Future's Best Temporary Structures</a>, and Finalist proposals for the <b class="major">UN Permanent Slavery Memorial International Design Competition</b>. </h6>
-											<a href="#silence">3__Breaking into Silence</a> &emsp; <a href="#wetland">4__The Wetland Guardians of Jean-Lafitte</a><br>
-											<a href="#fluid">5__Fluid Pavilion</a>
+											<h6> Having accumulated over 4 years of practice experience in architectural design at leading international firms in the US, UK, and Japan including <b class="major">Skidmore, Owings, and Merrill</b>, <b class="major">NADAAA</b>, <b class="major">Grimshaw Architects</b>, and <b class="major">junya ishigami + associates</b>, I earned my NY state licensure while working in <b class="major">Studio X</b> (the tall buildings studio) at <b class="major">FXCollaborative Architects</b>, where I also served as the <b class="major">Sustainability Expert</b> on multiple LEED-certified projects across the firm, including multi-million-dollar flagship projects such as <a href="#silence">3 Hudson Boulevard</a> and <a href="#silence">495 11th Ave</a>. Beyond professional practice, my academic projects are informed by a fundamental interest in how design can facilitate agency and harmonious relationships between people and their environments. These works have been included in the <a href="https://www.archdaily.com/771146/the-best-student-work-worldwide-archdaily-readers-show-us-their-studio-projects?ad_medium=gallery">Archdaily Best Student Work Worldwide</a>, <a href="https://www.re-thinkingthefuture.com/temporary-structure/fluid-pavilion-hanxi-charisse/">Rethinking the Future's Best Temporary Structures</a>, and the Finalist proposals for the <b class="major">UN Permanent Slavery Memorial International Design Competition</b>.</h6>
+											<h6><b class="major">PROFESSIONAL WORKS</b> &emsp; <a href="https://www.fxcollaborative.com/projects/filter/271/495-eleventh/">495 11th Ave</a> &emsp; <a href="https://www.fxcollaborative.com/projects/filter/51/3-hudson-boulevard/">3 Hudson Boulevard</a></h6>
+											<h6><b class="major">ACADEMIC PROJECTS</b> &emsp; <a href="#silence">Breaking into Silence</a> &emsp; <a href="#wetland">The Wetland Guardians of Jean-Lafitte</a> &emsp; <a href="#fluid">Fluid Pavilion</a></H6>
 										</div>
 										<div class="showBtn">
-											<summary><h1 class="major">> 教学 | teaching</h1></summary>
+											<summary><h1 class="major">> TEACHING | 教学 </h1></summary>
 											<img src="images/hover thumbs/5C9A7472.png" alt="" />
 										</div>
 										<div class="hideme">
-											<h6>From 2022-23 Hanxi served as the inaugural <a href="https://aap.cornell.edu/people/hanxi-wang">Design Teaching Fellow</a> at the Department of Architecture, Art, and Planning, Cornell University, where she taught architectural design as well as seminar in architectural theory and architecture, culture and society. During her time at Cornell, she also coordinated the prestigious annual <a href="https://aap.cornell.edu/news-events/fringe">Preston Thomas Memorial Symposium and Exhibition</a> on <a href="https://aap.cornell.edu/news-events/fringe-exhibition">FRINGE: New Centers for Architecture and Urbanism</a> with Assistant Professor Leslie Lok</h6>
-											<a href="#subversive">6__ARCH 3308/3408/6308/6408 City, Subversive</a> &emsp; 
-											<a href="#making">7__ARCH 1101/1102 Geologies of Making + Reconfigurations</a>
+											<h6>Having developed a passion for teaching during my B.Arch degree, I continued to take on mentoring and teaching roles as my career developed in professional practice and in human geography. The wide range of multidisciplinary skills I have accumulated has allowed me to teach <b class="major">architectural design</b>, <b class="major">critical theory</b>, and <b class="major">remote sensing analysis</b> in multiple institutes and departments in the US, the UK and India. Between 2022 and 2023, I served as one of the inaugural <b class="major">Design Teaching Fellows</b> in the Department of Architecture, Art, and Plannin at, Cornell University, where I was studio instructor for <b class="major">the First Year Core Design Studios</b> in the B.Arch programme and led my own <b class="major">seminar in architectural theory and architecture, culture and society</b> for postgraduate students and advanced undergraduate students. I have also served as Postgraduate Teaching Assistant in CASA0023 Remotely Sensing Cities and Environments at the UCL Bartlett <b class="major">Centre for Advanced Spatial Analysis</b> in 2024 and was invited to teach remote sensing in the M.Arch Landscape Architecture studio at <b class="major">Anna University</b>, Chennai, India in summer 2026.</h6>
+											<h6><a href="#subversive">ARCH 3308/3408/6308/6408 City, Subversive</a> &emsp; 
+											<a href="#making">ARCH 1101/1102 Geologies of Making + Reconfigurations</a></h6>
 										</div>
 								</div>
 						</section>
 						
 						<!-- Panel -->
-							<section class="panel banner right color0 span-1 element_browser">
+							<section class="element_browser panel banner right color0 span-1">
 								<div style="justify-content: right" class="intro content joined">
 									<v style="text-align:left"> <a href="#home"> << </a> research </v>
 								</div>
 							</section>
 						
-							<section class="panel banner color0 span-1-5 element_mobile">
+							<section class="element_mobile panel banner color0 span-1-5">
 								<div class="intro content joined">
 									<v style="text-align: left">r<br>e<br>s<br>e<br>a<br>r<br>c<br>h</v>
 								</div>
 							</section>
 						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight medium left" id="rural">
-								<div class="content span-7-5">
-									<h2 class="major"><a class="major" href="ruralizing.html">Ruralizing Urbanisation: <br>Homesteads, Subjectivities, and Subversions in China's Growing Cities</a></h2>
-									<b style="font-weight: 400">UKRI ESRC Funded PhD Research at University College London<br>+ Master's Dissertation at University of Oxford<br><br></b><b style="font-weight: 200; text-align: justify" >China's dramatic urbanization since the 1980s has fundamentally altered the physical, ecological and social dynamics of its cities and landscapes. While scholars have largely focused on the power of the state within this apparently top-down process, this project argues that it is equally important to understand the agency of the individual citizen. Through the phenomenon of <b>chengshi kaihuang</b> ("urban homesteading") this project investigates the emergence of a bottom-up countermovement of <b>urban ruralization</b> that challenges Western conceptions of <b>urban agency and ecology</b>. <br><br>Presented at the <a>2022 Royal Geographical Society Annual International Conference</a> and exhibited at <a>Cornell University Department of Architecture, Art, and Planning</a><br></b>
+							<section class="panel spotlight medium left" id="antipode">
+								<div class="content">
+									<h4>PUBLICATION<br><b style="font-weight: 600; font-style: italic">2026, Peer-reviewed research article published in <a href="https://onlinelibrary.wiley.com/journal/14678330">Antipode</a></b></h4>
+									<h2 class="major"><a class="major" href="antipode.html">Ruralizing Urbanization: <br>Opening the Wastelands of China’s Megacities</a></h2>
+									<b style="font-weight: 200; text-align: left" >In two of China’s largest megacities, Guangzhou and Wuhan, apparently ordinary individuals are deciding – independently, without organization, support or legal rights – to appropriate empty lands and transform them into cultivation landscapes in a practice called kāihuāng (“wasteland opening”). While each individual kāihuāng may be small, mapping using remote sensing data reveals emergent patterns of ‘agrarianisation’ formed through hundreds of disparate yet convergent practices across the urban landscapes. Triangulating field observations and interviews across 120 sites of kāihuāng with historical research, institutional records and archival materials, this study develops a spatial typology of kāihuāng’s appropriations of urban landscapes and examines the agrarian logics they exercise. Through kāihuāng, the paper examines the continued agency of agrarian logics within contemporary urbanity and how they inform the accumulated actions of disparate individuals to engender legible spatial transformations outside of formal institutions.</b> 
 								</div>
 								<div class="image filtered tinted" data-position="bottom">
-									<img src="images/project1.jpg" alt="" />
+									<img src="images/antipode1.jpg" alt="" />
 								</div>
-								<section class="element_mobile" style="left: -10%" >
-									<div class="blank span-1">
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-angle-left">Back</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#wild" class="button primary color2 circle icon solid fa-angle-right">Next</a></li>					
-										</ul>
-									</div>
-								</section>
-						</section>
+							</section>	
 
+							<section class="panel banner color0 xsmall"></section>
+						
+							<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium left" id="lr">
+								<div class="content">
+									<h4>PUBLICATION<br><b style="font-weight: 600; font-style: italic">2026, Peer-reviewed research article published in <a href="https://www.tandfonline.com/journals/clar20">Landscape Research</a> </b></h4>
+									<h2 class="major"><a class="major" href="lr.html">Agro-Urban Duality in Temporal Landscapes of Rapid Urbanization: A Diffractive Reading of Wuhan Through Emergent Practices of Kāihuāng</a></h2>
+									<b style="font-weight: 200; text-align: left" >The modern enclosure and expropriation of rural land have produced urban landscapes in which the antecedent agrarian and natural landscapes are almost completely illegible. Yet, even as the world appears increasingly urbanized, rural entities and processes do not simply disappear. Examining agrarian-urban landscapes created in the core urban districts of the Chinese megacity Wuhan by a practice called kāihuāng (Mandarin, “opening wasteland”) – where ordinary residents without organization or permission appropriate urban ‘wastelands’ for vegetable cultivation – this article argues that urbanization’s erasure of rural and natural landscapes is never complete. Leveraging Karan Barad’s notion of temporal diffraction and feminist theorizations of intra-action and entanglements, this paper draws on in-depth interviews, field observations, time-series geospatial analysis and historical materials to present an account of urbanization, not as a linear supersession of rurality by urbanity, but a diffractive superposition of rural and urban temporalities that co-exist within the contemporary urban landscape.</b> 
+								</div>
+								<div class="image filtered tinted" data-position="bottom">
+									<img src="images/lr.jpg" alt="" />
+								</div>
+							</section>	
+
+							<section class="panel banner color0 xsmall"></section>
+						
+							<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium left" id="urbs">
+								<div class="content">
+									<h4>EXHIBITION<br><b style="font-weight: 600; font-style: italic">August 2026, Exhibition held at the Slade School of Fine Arts, UCL, London, UK </b></h4>
+									<h2 class="major"><a class="major" href="urbs.html">Urbs Vegetabilis - City, Enlivened</a></h2>
+									<b style="font-weight: 200; text-align: left" >Presenting ethnographic data collected at over 100 hidden-in-plain-sight sites of kaihuang across Guangzhou and Wuhan, along with drone photography and mapping drawings, the exhibition aimed to evidence the everyday, yet stunningly creative ways in which ordinary people make rurality an intimate part of modern urbanity. Paying particular attention to the quotidian moments, spaces, and contexts in which formal boundaries between the rural and the urban are crossed, subverted, or made invisible, this exhibition presents a narrative of the simultaneously ordinary and extraordinary “rural-urbanity” that persists and thrives in the city. </b> 
+								</div>
+								<div class="image filtered tinted" data-position="bottom">
+									<img src="images/urbs.jpg" alt="" />
+								</div>
+							</section>	
+
+							<section class="panel banner color0 xsmall"></section>
+						
+							<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium left" id="ncities">
+								<div class="content">
+									<h4>PUBLICATION<br><b style="font-weight: 600; font-style: italic">2024, Peer-reviewed research article published in <a href="https://www.nature.com/articles/s44284-024-00038-4">Nature Cities</a></b></h4>
+									<h2 class="major"><a class="major" href="ncities.html">The Role of Informal Ruralization Within China’s Rapid Urbanization</a></h2>
+									<b style="font-weight: 200; text-align: left" >Presenting ethnographic data collected at over 100 hidden-in-plain-sight sites of kaihuang across Guangzhou and Wuhan, along with drone photography and mapping drawings, the exhibition aimed to evidence the everyday, yet stunningly creative ways in which ordinary people make rurality an intimate part of modern urbanity. Paying particular attention to the quotidian moments, spaces, and contexts in which formal boundaries between the rural and the urban are crossed, subverted, or made invisible, this exhibition presents a narrative of the simultaneously ordinary and extraordinary “rural-urbanity” that persists and thrives in the city. </b> 
+								</div>
+								<div class="image filtered tinted" data-position="bottom">
+									<img src="images/ncities.jpg" alt="" />
+								</div>
+							</section>	
+
+							<section class="panel banner color0 xsmall"></section>
+						
+							<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium left" id="criticall">
+								<div class="content">
+									<h4>PUBLICATION<br><b style="font-weight: 600; font-style: italic">2023, Peer-reviewed research article published in <a href="https://criticall.es/">Critic|all</a> conference proceedings </b></h4>
+									<h2 class="major"><a class="major" href="criticall.html">HOME-steading: Subversions, Reversions, and Diversions of the Moral Right to Space</a></h2>
+									<b style="font-weight: 200; text-align: left" >Presenting ethnographic data collected at over 100 hidden-in-plain-sight sites of kaihuang across Guangzhou and Wuhan, along with drone photography and mapping drawings, the exhibition aimed to evidence the everyday, yet stunningly creative ways in which ordinary people make rurality an intimate part of modern urbanity. Paying particular attention to the quotidian moments, spaces, and contexts in which formal boundaries between the rural and the urban are crossed, subverted, or made invisible, this exhibition presents a narrative of the simultaneously ordinary and extraordinary “rural-urbanity” that persists and thrives in the city. </b> 
+								</div>
+								<div class="image filtered tinted" data-position="bottom">
+									<img src="images/criticall.jpg" alt="" />
+								</div>
+							</section>	
+
+							<section class="panel banner color0 xsmall"></section>
+						
 						<!-- Panel (Spotlight) -->
-							<section class="panel banner color0 xsmall">
-							</section>
 							<section class="panel spotlight medium left" id="wild">
-								<div class="content span-7-5">
-									<h2 class="major"><a class="major" href="cities.html">Cities Gone Wild: <br>Understanding Urban Homesteads Through Remote Sensing</a></h2>
-									<b style="font-weight: 400">Funded Fellowship Design Research at Cornell University <br> + Remote Sesnsing Research Project at University of Oxford <br><br> <b style="font-weight: 200;text-align: justify">Through remote sensing analysis of <b>chengshi kaihuang</b> ("urban homesteading"), this study demonstrates that the massive urbanisation of the rural can create a bottom-up countermovement of ruralization. Taking Wuhan as the study area, this study the first to leverage <b>hyperspectral remote sensing data</b> from the <b>Sentinel-2</b> and <b>Landsat-8</b> missions in conjunction with machine learning algorithms to study the spatial, temporal, and ecological dynamics of urban homesteading. The study shows that urban homesteading has <b>constituted ~5% of Wuhan’s urban center since 2017</b>.<br><br>Presented at the <a> 2023 International Geoscience and Remote Sensing Symposium </a><br></b></b>
+								<div class="content">
+									<h4>EXHIBITION<br><b style="font-weight: 600; font-style: italic">2023, Exhibition held at the Bibliowicz Family Gallery, Cornell University, Ithaca, NY, USA</b></h4>
+									<h2 class="major"><a class="major" href="wild.html">Cities Gone Wild: Understanding Urban Homesteads Through Remote Sensing</a></h2>
+									<b style="font-weight: 200;text-align: justify">Through remote sensing analysis of <b>chengshi kaihuang</b> ("urban homesteading"), this study demonstrates that the massive urbanisation of the rural can create a bottom-up countermovement of ruralization. Taking Wuhan as the study area, this study the first to leverage <b>hyperspectral remote sensing data</b> from the <b>Sentinel-2</b> and <b>Landsat-8</b> missions in conjunction with machine learning algorithms to study the spatial, temporal, and ecological dynamics of urban homesteading. The study shows that urban homesteading has <b>constituted ~5% of Wuhan’s urban center since 2017</b>.</b></b>
 								</div>
 								<div class="image filtered tinted" data-position="top">
-									<img src="images/machinelearning_classifier.jpg" alt="" />
+									<img src="images/wild.jpg" alt="" />
 								</div>
-								<section class="element_mobile" style="left: -10%">
-									<div class="blank span-1-5">
-										<ul class="actions">
-											<li><a href="#rural" class="button primary color2 circle icon solid fa-angle-left">Back</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#silence" class="button primary color2 circle icon solid fa-angle-right">Next</a></li>					
-										</ul>
-									</div>
-								</section>
 							</section>
 						
 						<!-- Panel -->
@@ -164,26 +200,13 @@
 
 						<!-- Panel (Spotlight) -->
 							<section class="panel spotlight medium left" id="silence">
-								<div class="content span-6-5">
+								<div class="content">
 									<h2 class="major"><a class="major" href="silence.html">Breaking into Silence</a></h2>
 									<b style="font-weight: 400">College of Architecture, Art, and Planning, Cornell University</b><br><b style="font-weight: 200; text-align: justify">There is a story that seem to emerge time and time again within contemporary narratives of crises - where severe lack and severe excess exist paradoxically at the same time. Waste, one of the most dire issues of our time, is marked by this paradox. From food deserts to homelessness, crises of waste frequently originate from the inequitable distribution of resources rooted in underlying social prejudice and discrimination. This dissertation examines the entanglements between three parallel crises, <b>urban dereliction, immigration, and landfill</b>, in a small town called Skive in Mid Jutland, Denmark and proposes <b>an alternative model of urban agency and spacemaking</b> that may modulate the existing entanglements between these three issues from vicious to virtuous. <br><br> </b>
 								</div>
 								<div class="image filtered tinted" data-position="center">
 									<img src="images/project2.jpg" alt="" />
 								</div>
-								<section class="element_mobile">
-									<div class="blank span-1-5">
-										<ul class="actions">
-											<li><a href="#wild" class="button primary color2 circle icon solid fa-angle-left">Back</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#wetland" class="button primary color2 circle icon solid fa-angle-right">Next</a></li>					
-										</ul>
-									</div>
-								</section>
 							</section>
 						
 						<!-- Panel -->
@@ -192,79 +215,27 @@
 						
 						<!-- Panel (Spotlight) -->
 							<section class="panel spotlight medium left" id="wetland">
-								<div class="content span-6-5">
+								<div class="content">
 									<h2 class="major"><a class="major" href="wetland.html">The Wetland Guardians <br>of Jean-Lafitte</a></h2>
 									<b style="font-weight: 400">College of Architecture, Art, and Planning, Cornell University</b><br><b style="font-weight: 200; text-align: justify">From its location at the mouth of the Mississippi River on the US south coast, New Orleans has always been at risk of the devastation caused by hurricanes and cyclones. However within the last century, the erosion of coastal wetlands due to human interference has dramatically increased New Orleans's vulnerability to storms and flooding. In a site where human construction, from levees to oil canals, has nearly decimated the natural ecosystem, this proposal asks <b>how can we rethink the act of construction to not only limit its damage but to enable acts of care between human communities and the environment.</b><br><br></b>
 								</div>
 								<div class="image filtered tinted" data-position="bottom">
 									<img src="images/project3_s.jpg" alt="" />
 								</div>
-								<section class="element_mobile">
-									<div class="blank span-1-5">
-										<ul class="actions">
-											<li><a href="#silence" class="button primary color2 circle icon solid fa-angle-left">Back</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#fluid" class="button primary color2 circle icon solid fa-angle-right">Next</a></li>					
-										</ul>
-									</div>
-								</section>
 							</section>
 						<!-- Panel -->
 							<section class="panel banner xsmall">
 							</section>
-
-						<!-- Panel (Spotlight) -->
-<!--
-							<section class="panel spotlight medium left" id="fifth">
-								<div class="content span-6-5">
-									<h2 class="major"><a class="major" href="fifthproject.html">Ventus Impetus</a></h2>
-									<p><b>College of Architecture, Art, and Planning, Cornell University</b><br>Combining the hidden monumental infrastructural spaces of a NYC Subway ventilation tower with the public intimate human-scaled spaces of a library, this project examines the potential of architectural form to create ephemeral synergies and haptic connections between apparently polarising inhabitations. The movement of air within the ventilation shaft is both monumental and banal, it is a process and an event that cannot be witnessed or experienced by the public and yet our everyday life cannot function without its existence. The building is conceived as a porous masonry mass through which air can be exchanged between the subterranean and aboveground. The curvaceous shafts are formed not only for the flow of air but also for the diffusion of light. The apparently solid and secretive mass is in fact light and generous.</p>
-								</div>
-								<div class="image filtered tinted" data-position="center">
-									<img src="images/project6a.jpg" alt="" />
-								</div>
-								<section class="element_mobile">
-									<div class="blank span-1-5">
-										<ul class="actions">
-											<li><a href="#fourth" class="button primary color2 circle icon solid fa-angle-left">Back</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#sixth" class="button primary color2 circle icon solid fa-angle-right">Next</a></li>					
-										</ul>
-									</div>
-								</section>
-							</section>
--->
 						
 						<!-- Panel (Spotlight) -->
 							<section class="panel spotlight medium left" id="fluid">
-								<div class="content span-6-5">
+								<div class="content">
 									<h2 class="major"><a class="major" href="fluid.html">Fluid Pavilion</a></h2>
 									<b style="font-weight: 400">College of Architecture, Art, and Planning, Cornell University</b><br><b style="font-weight: 200; text-align: justify">Designed with only <b>3 unit types</b>, this experimental pavilion constructed from 213 individual PETG components explores the potential of <b>thermoforming</b> as a structural mechanism that can <b>program memory, elasticity and strength</b> into ordinary sheet plastic. By carefully embedding different types of 3D curvatures into sheet plastic, we were able to calibrate a spectrum of structural properties that made it possible to construct a <b>8’ tall</b> pavilion from <b>0.75mm PETG sheets</b> that is <b>simultaneously rigid and fluid</b>. <br><br>Published in <a> 2015 Archdaily Best Student Works Worldwide</a>, <a>Rethinking the Future Best Temporary Structures</a>, and <a>Resoluciones Constructivas No Convencionales</a><br><br></b>
 								</div>
 								<div class="image filtered tinted" data-position="center">
 									<img src="images/project4.jpg" alt="" />
 								</div>
-								<section class="element_mobile">
-									<div class="blank span-1-5">
-										<ul class="actions">
-											<li><a href="#wetland" class="button primary color2 circle icon solid fa-angle-left">Back</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#subversive" class="button primary color2 circle icon solid fa-angle-right">Next</a></li>					
-										</ul>
-									</div>
-								</section>
 							</section>
 						<!-- Panel -->
 							<section class="panel banner color0 span-1-5 element_browser">
@@ -280,79 +251,29 @@
 							</section>
 						<!-- Panel (Spotlight) -->
 							<section class="panel spotlight medium left" id="subversive">
-								<div class="content span-6-5">
+								<div class="content">
 									<h2 class="major"><a class="major" href="city_subversive.html">City, Subversive</a></h2>
 									<b style="font-weight: 400">ARCH3308/3408/6308/6408 Architecture Culture and Society <br>+ Theory Seminar at Cornell University</b><br><b style="font-weight: 200; text-align: justify">As a profession that has historically been enamored with grand gestures and celebrations of singular figures of genius, architecture is undergoing a drastic shift towards broader community engagement and more inclusive forms of space-making. Yet, in order to create real, radical change and avoid the traps of superficial marketing strategies, it is crucial to take seriously the <b>potential and agency of marginalized, overlooked communities and individuals</b> and understand their existing influence and contributions in creating the urban environment. The goal of the seminar is to <b>learn to understand the city through currently marginalized perspectives</b>, opening up to subaltern, queer, more-than-human, senescent, minor, and other potentially “hidden” ways of understanding the city beyond the dominant academic narrative.<br><br></b>
 								</div>
 								<div class="image filtered tinted" data-position="center">
 									<img src="images/subversive/full/PhotoDocumentation_04.jpg" alt="" />
 								</div>
-								<section class="element_mobile">
-									<div class="blank span-1-5">
-										<ul class="actions">
-											<li><a href="#fluid" class="button primary color2 circle icon solid fa-angle-left">Back</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#making" class="button primary color2 circle icon solid fa-angle-right">Next</a></li>					
-										</ul>
-									</div>
-								</section>
 							</section>
 						<!-- Panel -->
 							<section class="panel banner xsmall">
 							</section>
 						<!-- Panel (Spotlight) -->
 							<section class="panel spotlight medium left" id="making">
-								<div class="content span-6-5">
+								<div class="content">
 									<h2 class="major"><a class="major" href="making.html">Geologies of Making + Reconfigurations</a></h2>
 									<b style="font-weight: 400">ARCH1101 + ARCH1102 <br>First-Year Architecture Core Design Studios at Cornell University</b><br><b style="font-weight: 200; text-align: justify">First-year core design studios in Cornell University's Bachelor of Architecture professional degree program introduces students not only to architectural design but also to the culture of architecture studio, as well as fundamental skills. The first semester studio <b>Geologies of Making</b> aims to challenge students' preconceptions of what architecture is by guiding them to discover <b>form, logic, and composition</b> through observation of geological landforms, exercise abstraction, and creating spatial designs for a visitor's center for said landscape. In the second semester <b>Reconfigurations</b> focuses on the study of <b>regional building traditions</b> to understand how different societies have developed construction techniques and spatial logics to survive and <b>live in harmony with their environment</b>. <br><br></b>
 								</div>
 								<div class="image filtered tinted" data-position="center">
 									<img src="images/making/full/IMG_3029 (1).jpeg" alt="" />
 								</div>
-								<section class="element_mobile">
-									<div class="blank span-1-5">
-										<ul class="actions">
-											<li><a href="#fluid" class="button primary color2 circle icon solid fa-angle-left">Back</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>				
-										</ul>
-										<ul class="actions">
-											<li><a href="#making" class="button primary color2 circle icon solid fa-address-card">Next</a></li>					
-										</ul>
-									</div>
-								</section>
 							</section>
 						<!-- Panel -->
 							<section class="panel banner xsmall">
-							</section>
-						<!-- Panel -->
-<!--
-							<section class="panel banner color0 span-1-5 element_browser">
-								<div class="intro content joined">
-									<v>contact</v>
-								</div>
-							</section>
-						
-							<section class="panel banner color0 span-1-5 element_mobile">
-								<div style="left: 28%" class="intro content joined">
-									<v>c<br>o<br>n<br>t<br>a<br>c<br>t</v>
-								</div>
-							</section>
--->
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight color1 span-1 element_browser" id="contact">
-								<div class="intro content joined">
-									<ul class="actions">
-										<li><a href="mailto: hanxi.wang.22@ucl.ac.uk" class="button primary color2 circle icon solid fa-address-card">Email</a></li>
-										<li><a href="#home" class="button primary color2 circle icon solid fa-bars">Home</a></li>
-										<li><a href="https://www.linkedin.com/in/hanxi-wang-868908137/" class="button primary color2 circle icon solid fa-user">LinkedIn</a></li>					
-									</ul>
-								</div>
 							</section>
 
 				<!-- Scripts -->
@@ -361,5 +282,130 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/main.js"></script>
 			</div>
-	</div> </body>
+				<!-- Dot Navigation -->
+				<div id="dot-nav">
+					<div class="dot-group" data-group="home">
+						<div class="dot-bars">
+							<a class="dot" href="#home_b" data-label="Home">
+							</a>
+						</div>
+						<div class="dot-label"><span class="bracket"></span>Home<span class="bracket"></span></div>
+					</div>
+
+					<span class="dot-separator"></span>
+
+					<div class="dot-group" data-group="research">
+						<div class="dot-bars">
+							<a class="dot" href="#antipode" data-label="Ruralising Urbanisation">
+								<span class="dot-tooltip">
+									<span class="dot-tooltip-image-wrapper">
+										<img src="images/antipode.jpg" alt="">
+										<span class="dot-tooltip-label">Ruralising Urbanisation</span>
+									</span>
+								</span>
+							</a>
+							<a class="dot" href="#lr" data-label="Agro-Urban Duality">
+								<span class="dot-tooltip">
+									<span class="dot-tooltip-image-wrapper">
+										<img src="images/lr.jpg" alt="">
+										<span class="dot-tooltip-label">Agro-Urban Duality</span>
+									</span>
+								</span>
+							</a>
+							<a class="dot" href="#urbs" data-label="Urbs Vegetabilis">
+								<span class="dot-tooltip">
+									<span class="dot-tooltip-image-wrapper">
+										<img src="images/urbs.jpg" alt="">
+										<span class="dot-tooltip-label">Urbs Vegetabilis</span>
+									</span>
+								</span>
+							</a>
+							<a class="dot" href="#ncities" data-label="Role of Informal Ruralization">
+								<span class="dot-tooltip">
+									<span class="dot-tooltip-image-wrapper">
+										<img src="images/ncities.jpg" alt="">
+										<span class="dot-tooltip-label">The Role of Informal Ruralization within China's Rapid Urbanizaiton</span>
+									</span>
+								</span>
+							</a>
+							<a class="dot" href="#criticall" data-label="HOME-steading">
+								<span class="dot-tooltip">
+									<span class="dot-tooltip-image-wrapper">
+										<img src="images/criticall.jpg" alt="">
+										<span class="dot-tooltip-label">HOME-steading</span>
+									</span>
+								</span>
+							</a>
+							<a class="dot" href="#wild" data-label="Cities Gone Wild">
+								<span class="dot-tooltip">
+									<img src="images/wild.jpg" alt="">
+									<span class="dot-tooltip-label">Cities Gone Wild</span>
+								</span>
+							</a>
+						</div>
+						<div class="dot-label"><span class="bracket"></span>Research<span class="bracket"></span></div>
+					</div>
+
+					<span class="dot-separator"></span>
+
+					<div class="dot-group" data-group="design">
+						<div class="dot-bars">
+							<a class="dot" href="#silence" data-label="Breaking into Silence">
+								<span class="dot-tooltip">
+									<img src="images/project2.jpg" alt="">
+									<span class="dot-tooltip-label">Breaking into Silence</span>
+								</span>
+							</a>
+							<a class="dot" href="#wetland" data-label="Wetland Guardians">
+								<span class="dot-tooltip">
+									<img src="images/project3_s.jpg" alt="">
+									<span class="dot-tooltip-label">Wetland Guardians</span>
+								</span>
+							</a>
+							<a class="dot" href="#fluid" data-label="Fluid Pavilion">
+								<span class="dot-tooltip">
+									<img src="images/project4.jpg" alt="">
+									<span class="dot-tooltip-label">Fluid Pavilion</span>
+								</span>
+							</a>
+						</div>
+						<div class="dot-label"><span class="bracket"></span>Design<span class="bracket"></span></div>
+					</div>
+
+					<span class="dot-separator"></span>
+
+					<div class="dot-group" data-group="teaching">
+						<div class="dot-bars">
+							<a class="dot" href="#subversive" data-label="City, Subversive">
+								<span class="dot-tooltip">
+									<img src="images/subversive/full/PhotoDocumentation_04.jpg" alt="">
+									<span class="dot-tooltip-label">ARCH6308/6408 City, Subversive</span>
+								</span>
+							</a>
+							<a class="dot" href="#making" data-label="Geologies of Making">
+								<span class="dot-tooltip">
+									<img src="images/making/full/IMG_3029 (1).jpeg" alt="">
+									<span class="dot-tooltip-label">ARCH1101+1102 Geologies of making</span>
+								</span>
+							</a>
+						</div>
+						<div class="dot-label"><span class="bracket"></span>Teaching<span class="bracket"></span></div>
+					</div>
+
+					<span class="dot-separator"></span>
+<!--
+
+					<div class="dot-group" data-group="contact">
+						<div class="dot-bars">
+							<a class="dot" href="#contact" data-label="Contact">
+							</a>
+						</div>
+						<div class="dot-label"><span class="bracket"></span>Contact<span class="bracket"></span></div>
+					</div>
+-->
+				</div>
+		
+				<div id="dot-nav-overlay"></div>	
+		</div> 
+	</body>
 </html>
